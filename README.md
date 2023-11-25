@@ -1,2 +1,5 @@
-# skript-lib
-Library für LaTeX-Skripte
+# LaTeX Library
+
+# Skript-Lib
+
+LaTeX Library für die Erstellung von Skripten.
