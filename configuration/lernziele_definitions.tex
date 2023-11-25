@@ -1,0 +1,29 @@
+\newcommand{\listlernzielname}{Liste der Lernziele}
+\newlistof{lernziel}{lern}{\listlernzielname}
+
+\newcommand{\lernziel}[3][]{%
+    \refstepcounter{lernziel}
+    \par\noindent #3
+    \addcontentsline{lern}{lernziel}{
+    \ifx&#1&%
+	\else
+	{\\ \hspace{-0.25cm}\Large\sffamily\bfseries #1\\}
+	\fi
+	{\\ \hspace{-0.25cm}\sffamily\bfseries #2\newline}
+	\newline
+	#3
+	\newline
+	{\newline\sffamily Seite}
+	}
+}
+
+\renewcommand{\cftlernzielnumwidth}{0em}
+\renewcommand{\cftlernzielpagefont}{\sffamily}
+\renewcommand{\cftbeforelerntitleskip}{0pt}
+\renewcommand{\cftafterlerntitleskip}{0pt}
+
+
+%{
+%	\newline\sffamily\bfseries #3
+%	\newline\sffamily\bfseries #1
+%    } \\ \\ #2 \\ \\ {\sffamily Seite}}

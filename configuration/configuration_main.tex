@@ -1,0 +1,44 @@
+% Continous numbering of figures and tables
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+\input{lernziele_definitions.tex}
+\input{cleancode_definitions.tex}
+
+% \makeindex % Tells LaTeX to create the files required for indexing
+
+\input{tikz_config.tex}
+
+\setlength{\parindent}{0pt}
+\sisetup{locale = DE}
+
+\input{to_do_list_definition.tex}
+\input{circuit_definitions.tex}
+\input{color_definitions.tex}
+\input{listing_definitions.tex}
+\input{quote_definitions.tex}
+\input{layout.tex}
+\input{cryptology.tex}
+\input{file_directory_visualizer.tex}
+\input{main_toc.tex}
+\input{mini_toc_part_heads.tex}
+\input{headers_footers.tex}
+\input{theorem_styles.tex}
+\input{definition_colored_boxes.tex}
+\input{remark_environment.tex}
+\input{section_numbering_margin.tex}
+
+% Reset Chapter numbering in each part.
+\@addtoreset{chapter}{part}
+
+\input{part_headings.tex}
+\input{chapter_headings.tex}
+\input{network_topology.tex}
+\input{links.tex}
+\input{exercise_questions.tex}
+\input{symbols.tex}
+
+% Space in the List of Lernziele
+\makeatletter % To fix a small offset with page number.
+\renewcommand{\@pnumwidth}{2em}
+\makeatother

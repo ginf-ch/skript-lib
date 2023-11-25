@@ -1,0 +1,17 @@
+\newcommand{\listcleancodename}{Liste der Clean Code-Regeln}
+\newlistof{cleancoderegel}{cleancoderegel}{\listcleancodename}
+
+\newcommand{\cleancoderegel}[2]{%
+    \refstepcounter{cleancoderegel}
+    \par\noindent #2
+    \addcontentsline{cleancoderegel}{cleancoderegel}{
+    	\begin{minipage}{\linewidth}
+        		#2
+		\begin{minipage}[t][0.25cm][t]{\linewidth}
+		\end{minipage}
+	\end{minipage}
+    }
+}
+
+\renewcommand{\cftcleancoderegeldotsep}{\cftnodots}
+\cftpagenumbersoff{cleancoderegel}
